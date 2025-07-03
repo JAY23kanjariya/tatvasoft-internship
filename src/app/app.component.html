@@ -1,0 +1,25 @@
+<app-header></app-header>
+
+<div class="container">
+  <form>
+    <div class="form-group">
+      <label for="inputText">Username : </label>
+      <input type="text" class="form-control" id="inputText" placeholder="Enter username" [(ngModel)]="username" name="username">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="inputPassword">Password : </label>
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password" [(ngModel)]="password" name="password">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary" (click)="onLogin()">Submit</button>
+  </form>
+</div>
+
+<hr>
+<div class="container" *ngIf="visible">
+  <h2>Login Successfully : </h2>
+  <h3>welcome, {{username}}</h3>
+</div>
+
+<router-outlet></router-outlet>
