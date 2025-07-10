@@ -1,5 +1,0 @@
-To run the Anulgar code
-------------------------
-1. npm install --force (only first time/ one time only)
-
-2. to run Angular code -> in vscode(blue-icon) > open terminal -> ng serve
